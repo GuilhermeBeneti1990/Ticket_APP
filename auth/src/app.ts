@@ -7,8 +7,7 @@ import { currentUserRouter } from './routes/currentUser';
 import { signupRouter } from './routes/signup';
 import { singinRouter } from './routes/signin';
 import { signoutRouter } from './routes/signout';
-import { errorHandler } from './middlewares/error-handler';
-import { NotFoundError } from './errors/not-found';
+import { errorHandler, NotFoundError } from '@beneti-tickets/common';
 
 const app = express();
 app.set('trust proxy', true);

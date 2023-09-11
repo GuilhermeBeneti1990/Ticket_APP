@@ -1,10 +1,9 @@
 import express, { Request, Response } from 'express';
 import { body } from 'express-validator';
 import jwt from 'jsonwebtoken';
-import { validateRequest } from '../middlewares/validate-request';
+import { validateRequest, BadRequestError} from '@beneti-tickets/common';
 
 import { User } from '../models/User';
-import { BadRequestError } from '../errors/bad-request';
 import { Password } from '../helpers/password';
 
 const router = express.Router();
